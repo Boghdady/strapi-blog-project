@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "displayName": "hero",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-hero.hero"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "servicesPreview": {
+      "displayName": "servicesPreview",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-hero.services-preview"
+    },
+    "featuredCourse": {
+      "displayName": "featuredCourse",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-hero.featured-course"
+    },
+    "postSelection": {
+      "displayName": "postsSelection",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.posts-selection"
+    },
+    "DynamicHomeSection": {
+      "type": "dynamiczone",
+      "components": [
+        "layout-hero.newletter-form",
+        "layout-hero.mission"
+      ]
+    }
+  }
+}
